@@ -1,0 +1,10 @@
+Hello!
+
+Welcome to the not flappy bird game :)
+
+Here will be the game
+
+The highest scorers are:
+-Me
+-Myself
+-I

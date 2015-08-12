@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Alicia's (not quite) Flappy Bird.</h1>
+        <p>Welcome to the best game there is!</p>
+    </div>
+</div>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../lib/bootstrap.css"/>
+</head>
+<body>
+<div class="container">
+    <title>Alicia's not flappy bird game</title>
+    <link rel="stylesheet" href="../assets/style.css"/>
+    <h1>Hello!</h1>
+    <p>Welcome to the not flappy bird game :)</p>
+
+    <div class="row">
+        <div class="col-md-8">
+            <p id="gameLink">
+                <a href="example.html">Here will be the game</a>
+            </p>
+        </div>
+        <div class="col-xs-5">
+            <p id="gameLink">
+                <a href="example.html">
+                    <img src="../assets/screenshot3.png" class="img-responsive" />
+                </a>
+            </p>
+        </div>
+        <div id="game"> </div>
+        <div class="col-md-8">
+
+            <p>The highest scorers are:</p>
+            <ul>
+                <li class="gold">Me</li>
+                <li class="score">Myself</li>
+                <li class="score">I</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-8">
+            <p>
+                <a>
+                    <img src="../assets/screenshot2.png" class="img-circle img-responsive" />
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="greeting">
+    <h3>Save your score</h3>
+    <form id="greeting-form" class="form-inline">
+        <div class="form-group">
+            <label for="fullName">What's your name?</label>
+            <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Alicia">
+
+            <label for="email">What's your email?</label>
+            <input type="email" id="email" class="form-control" name="email" placeholder="e.xample@email.com">
+
+            <input type="hidden" id="score" name="score" value="0">
+
+        </div>
+        <button class="btn btn-default" type="submit">OK</button>
+    </form>
+</div>
+
+<script src="../lib/jquery.js"></script>
+<script src="../lib/phaser.min.js"></script>
+<script src="../js/flappy.js"></script>
+<form id="greeting-form" method="post" action="/score">
+</body>
+</html>
